@@ -19,12 +19,7 @@ app.use(express.static(path.join(__dirname, '../frontend')));
 app.use("/styles", express.static(path.join(__dirname, "..", "styles")));
 
 // MySQL connection
-const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '1035854944x',
-    database: "CryptoRiwi"
-});
+const db = mysql.createConnection('mysql://root:NFHIWIKPVbMIBMtmNnAcItDeagqSsRrr@hopper.proxy.rlwy.net:34473/railway');
 
 db.connect(err => {
     if (err) {
