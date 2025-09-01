@@ -1,3 +1,8 @@
+// Detecta si está en local o en producción
+const API_URL = window.location.hostname.includes("localhost")
+  ? "http://localhost:3000"
+  : "https://proyecto-integrador-cryptoriwi.onrender.com";
+
 document.getElementById("login-form").addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -5,7 +10,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
   const password = document.getElementById("password").value;
 
   try {
-    const response = await fetch("http://localhost:3000/login", {
+    const response = await fetch(`${API_URL}/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -16,16 +21,17 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
     const data = await response.json();
 
     if (data.success) {
-  document.getElementById("login-message").textContent = "✅ Successful login!";
-  document.getElementById("login-message").classList.remove("text-danger");
-  document.getElementById("login-message").classList.add("text-success");
+      document.getElementById("login-message").textContent = "✅ Successful login!";
+      document.getElementById("login-message").classList.remove("text-danger");
+      document.getElementById("login-message").classList.add("text-success");
 
-  localStorage.setItem("isLoggedIn", "true");
-  localStorage.setItem("user", JSON.stringify(data.user));
+      // guardar sesión
+      localStorage.setItem("isLoggedIn", "true");
+      localStorage.setItem("user", JSON.stringify(data.user));
 
-  // redirect to dashboard
-  window.location.href = "./dashboard.html";
-} else {
+      // redirigir a dashboard
+      window.location.href = "./dashboard.html";
+    } else {
       document.getElementById("login-message").textContent = "❌ Incorrect credentials";
     }
   } catch (err) {
@@ -34,7 +40,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
   }
 });
 
-// handing back home button
+// handling back home button
 const backBtn = document.getElementById("back-btn");
 if (backBtn) {
   backBtn.addEventListener("click", () => {

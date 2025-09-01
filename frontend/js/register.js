@@ -1,3 +1,8 @@
+// Detecta si está en local o en producción
+const API_URL = window.location.hostname.includes("localhost")
+  ? "http://localhost:3000"
+  : "https://proyecto-integrador-cryptoriwi.onrender.com";
+
 document.getElementById("register-form").addEventListener("submit", async (e) => {
   e.preventDefault();
 
@@ -13,7 +18,7 @@ document.getElementById("register-form").addEventListener("submit", async (e) =>
   }
 
   try {
-    const response = await fetch("http://localhost:3000/register", {
+    const response = await fetch(`${API_URL}/register`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -45,7 +50,7 @@ document.getElementById("register-form").addEventListener("submit", async (e) =>
   }
 });
 
-// handing back home button
+// handling back home button
 const backBtn = document.getElementById("back-btn");
 if (backBtn) {
   backBtn.addEventListener("click", () => {
