@@ -3,37 +3,37 @@
 ![Crypto Logo](https://img.shields.io/badge/CryptoRiwi-Beta-blueviolet?style=for-the-badge&logo=bitcoin)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
 
-**CryptoRiwi** es una aplicación web educativa que simula una **plataforma de criptomonedas**.  
-Permite a los usuarios **registrarse, administrar una billetera ficticia, ver el precio del Bitcoin en tiempo real y realizar transacciones simuladas** como comprar, vender y hacer intercambios.  
+**CryptoRiwi** is an educational web application that simulates a cryptocurrency platform.
+It allows users to register, manage a dummy wallet, view the price of Bitcoin in real time, and perform simulated transactions such as buying, selling, and making trades.
 
-> ⚡ Proyecto desarrollado como parte del **Proyecto Integrador - CodeUp Riwi 2025**.  
-
----
-
-## 🚀 Características
-
-- 🔐 **Autenticación de usuarios** (registro e inicio de sesión).
-- 👛 **Billetera virtual** con saldo inicial ficticio.
-- 💸 **Simulación de transacciones** (compra, venta, depósitos, retiros).
-- 📈 **Precio de Bitcoin en tiempo real** usando la API de [CoinGecko](https://docs.coingecko.com/docs/10-mins-tutorial-guide).
-- 🛒 **Intercambio de productos/servicios** ficticios dentro de la plataforma.
-- 📜 **Historial de transacciones** por usuario.
-- 🎨 **Interfaz moderna** con Bootstrap 5.
+> ⚡ Project developed as part of the **Integrative Project - CodeUp Riwi 2025**.  
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🚀 Features
+
+- 🔐 **User authentication** (registration and login).
+- 👛 **Virtual wallet** with fictitious initial balance.
+- 💸 **Transaction simulation** (purchase, sale, deposits, withdrawals).
+- 📈 **Real-time Bitcoin price** using the [CoinGecko](https://docs.coingecko.com/docs/10-mins-tutorial-guide). API
+- 🛒 **Exchange of fictitious products/services** within the platform.
+- 📜 **Transaction history** per user.
+- 🎨 **Modern interface** with Bootstrap 5.
+
+---
+
+## 🛠️ Technologies Used
 
 - **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 5  
 - **Backend:** Node.js + Express  
-- **Base de datos:** MySQL  
-- **API Externa:** CoinGecko (para precio del BTC en tiempo real)  
-- **Control de versiones:** Git + GitHub  
-- **Metodología:** SCRUM con Azure DevOps  
+- **Database:** MySQL  
+- **External API:** CoinGecko (for real-time BTC price)  
+- **Version control:** Git + GitHub  
+- **Methodology:** SCRUM with Azure DevOps  
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📂 Project Structure
 
 ```bash
 CryptoRiwi/
@@ -48,8 +48,8 @@ CryptoRiwi/
 └── README.md          # Documentación
 ```
 
-##📦 Instalación y Uso
-🔹 Prerrequisitos
+##📦 Installation and Use
+🔹 Prerequisites
 
 Node.js
  v16+
@@ -57,51 +57,51 @@ Node.js
 MySQL
  8+
 
-Navegador moderno (Chrome, Edge, Firefox)
+Modern browser (Chrome, Edge, Firefox)
 
-🔹 Pasos
+🔹 Steps
 
-Clonar repositorio:
+Clone repository:
 
 git clone https://github.com/tuusuario/CryptoRiwi.git
-cd CryptoRiwi
+Cryptoriwi CD
 
 
-Instalar dependencias:
+Install dependencies:
 
 npm install
 
 
-Configurar base de datos MySQL:
+Configure MySQL database:
 
-Crear la base de datos ejecutando sql/schema.sql.
+Create the database by running sql/schema.sql.
 
-Ajustar credenciales en server.js.
+Set credentials in server.js.
 
-Ejecutar servidor:
+Run server:
 
 nodemon server.js
 
 
-Abrir en navegador:
+Open in browser:
 
 http://localhost:3000
 
-📖 Documentación Técnica
+📖 Technical Documentation
 
-📌 Objetivo general: Desarrollar una aplicación web educativa que permita a los usuarios simular el uso de criptomonedas.
+📌 General objective: Develop an educational web application that allows users to simulate the use of cryptocurrencies.
 
-📌 Alcance: Registro, autenticación, billetera virtual, transacciones ficticias y visualización de precios.
+📌 Scope: Registration, authentication, virtual wallet, fictitious transactions and price display.
 
-📌 Historias de usuario:
+📌 User stories:
 
-Como usuario, quiero registrarme para tener mi propia billetera.
+As a user, I want to register to have my own wallet.
 
-Como usuario, quiero ver el precio de BTC en tiempo real.
+As a user, I want to see the price of BTC in real time.
 
-Como usuario, quiero comprar y vender Bitcoin ficticio.
+As a user, I want to buy and sell fictitious Bitcoin.
 
-Como usuario, quiero ver mi historial de transacciones.
+As a user, I want to see my transaction history.
 
 
 ```
@@ -140,16 +140,16 @@ DELIMITER ;
 ```
 
 
-👨‍💻 Autores
+👨‍ 💻 Authors
 
-Proyecto creado por Equipo CryptoRiwi ✨
+Project created by CryptoRiwi Team ✨
 
-Santiago Ochoa Posso (DevOps - Clan Hooper)
+Santiago Ochoa Posso (DevOps - Hopper Clan)
 
-Braian Cardona Bermudez (Developer - Clan Hooper)
+Braian Cardona Bermudez (Developer - Hopper Clan)
 
-Maria Jose Agudelo Ocampo (Scrum Manager, Product Owner - Clan Linus)
+Maria Jose Agudelo Ocampo (Scrum Manager, Product Owner - Linus Clan)
 
-Jose Manuel Gustamante (Developer - Clan Hooper)
+Jose Manuel Gustamante (Developer - Hopper Clan)
 
-Daniel Alexander Ariza (Developer - Clan Linus)
+Daniel Alexander Ariza (Developer - Linus Clan)
