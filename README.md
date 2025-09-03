@@ -37,15 +37,51 @@ It allows users to **register, manage a dummy wallet, view the price of various 
 
 ```bash
 CryptoRiwi/
-├── server.js          # Servidor Express con CRUD
-├── package.json       # Dependencias Node
-├── public/
-│   ├── index.html     # Frontend principal
-│   ├── css/           # Estilos
-│   └── js/            # Scripts frontend
-├── sql/
-│   └── schema.sql     # Script de base de datos
-└── README.md          # Documentación
+├── DB/                          # Old database folder
+│   └── CryptoRiwiDB.sql         # Original SQL script
+│
+├── backend/                     # Node.js backend
+│   ├── config/
+│   │   └── db.js                # MySQL connection
+│   ├── controllers/
+│   │   └── authController.js    # Authentication controller
+│   ├── routes/
+│   │   └── authRoutes.js        # Authentication routes
+│   ├── APIbtc.js                # Bitcoin API script
+│   └── server.js                # Main Express server
+│
+├── Frontend/                    # client-side
+│   ├── index.html               # Main entry page
+│   ├── APIbtc.html              # Bitcoin API view
+│   ├── about_us.html            # About us page
+│   ├── courses.html             # Courses page
+│   ├── dashboard.html           # Dashboard page
+│   ├── exchange.html            # Exchange page
+│   ├── login.html               # Login page
+│   ├── register.html            # Register page
+│   └── wallet.html              # Wallet page
+│
+│   ├── css/                     # CSS styles
+│   │   ├── styles.css
+│   │   └── styles-courses.css
+│
+│   ├── js/                      # Frontend scripts
+│   │   ├── about_us.js
+│   │   ├── courses.js
+│   │   ├── dashboard.js
+│   │   ├── exchange.js
+│   │   ├── index.js
+│   │   ├── login.js
+│   │   ├── register.js
+│   │   └── wallet.js
+│
+│   └── pdfs/                    # PDF resources
+│       ├── Manual_de_trading_avanzado.pdf
+│       └── bitcoin.pdf
+│
+├── README.md                    # Project documentation
+├── package-lock.json            # Dependency lock file
+├── package.json                 # Node.js dependencies
 ```
 
 ##📦 Installation and Use
