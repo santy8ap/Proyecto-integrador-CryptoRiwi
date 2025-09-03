@@ -51,7 +51,6 @@ CryptoRiwi/
 │
 ├── Frontend/                    # client-side
 │   ├── index.html               # Main entry page
-│   ├── APIbtc.html              # Bitcoin API view
 │   ├── about_us.html            # About us page
 │   ├── courses.html             # Courses page
 │   ├── dashboard.html           # Dashboard page
