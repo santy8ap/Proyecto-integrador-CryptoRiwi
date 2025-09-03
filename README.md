@@ -1,56 +1,89 @@
 # 💰 CryptoRiwi
 
 ![Crypto Logo](https://img.shields.io/badge/CryptoRiwi-Beta-blueviolet?style=for-the-badge&logo=bitcoin)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![Status](https://img.shields.io/badge/Status-In_Progress-yellow?style=for-the-badge)
 
-**CryptoRiwi** es una aplicación web educativa que simula una **plataforma de criptomonedas**.  
-Permite a los usuarios **registrarse, administrar una billetera ficticia, ver el precio del Bitcoin en tiempo real y realizar transacciones simuladas** como comprar, vender y hacer intercambios.  
+**CryptoRiwi** is an educational web application that simulates a **cryptocurrency platform**.  
+It allows users to **register, manage a dummy wallet, view the price of various cryptocurrencies in real time, and perform simulated transactions** such as buying, selling, and making trades.  
 
-> ⚡ Proyecto desarrollado como parte del **Proyecto Integrador - CodeUp Riwi 2025**.  
-
----
-
-## 🚀 Características
-
-- 🔐 **Autenticación de usuarios** (registro e inicio de sesión).
-- 👛 **Billetera virtual** con saldo inicial ficticio.
-- 💸 **Simulación de transacciones** (compra, venta, depósitos, retiros).
-- 📈 **Precio de Bitcoin en tiempo real** usando la API de [CoinGecko](https://docs.coingecko.com/docs/10-mins-tutorial-guide).
-- 🛒 **Intercambio de productos/servicios** ficticios dentro de la plataforma.
-- 📜 **Historial de transacciones** por usuario.
-- 🎨 **Interfaz moderna** con Bootstrap 5.
+> ⚡ Project developed as part of the **Integration Project - CodeUp Riwi 2025**.  
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## 🚀 Characteristics
+
+- 🔐 **User authentication** (registration and login).
+- 👛 **Virtual wallet** with fictitious initial balance.
+- 💸 **Transaction simulation** (purchase, sale, deposits, withdrawals).
+- 📈 **Real-time Bitcoin price** using the [CoinGecko](https://docs.coingecko.com/docs/10-mins-tutorial-guide). API
+- 🛒 **Exchange of fictitious products/services** within the platform.
+- 📜 **Transaction history** per user.
+- 🎨 **Modern interface** with Bootstrap 5.
+
+---
+
+## 🛠️ Technologies Used
 
 - **Frontend:** HTML5, CSS3, JavaScript, Bootstrap 5  
 - **Backend:** Node.js + Express  
-- **Base de datos:** MySQL  
-- **API Externa:** CoinGecko (para precio del BTC en tiempo real)  
-- **Control de versiones:** Git + GitHub  
-- **Metodología:** SCRUM con Azure DevOps  
+- **Database:** MySQL  
+- **External API:** CoinGecko (for real-time BTC price)  
+- **Version control:** Git + GitHub  
+- **Methodology:** SCRUM with Azure DevOps  
 
 ---
 
-## 📂 Estructura del Proyecto
+## 📂 Project structure
 
 ```bash
 CryptoRiwi/
-├── server.js          # Servidor Express con CRUD
-├── package.json       # Dependencias Node
-├── public/
-│   ├── index.html     # Frontend principal
-│   ├── css/           # Estilos
-│   └── js/            # Scripts frontend
-├── sql/
-│   └── schema.sql     # Script de base de datos
-└── README.md          # Documentación
+├── DB/                          # Old database folder
+│   └── CryptoRiwiDB.sql         # Original SQL script
+│
+├── backend/                     # Node.js backend
+│   ├── config/
+│   │   └── db.js                # MySQL connection
+│   ├── controllers/
+│   │   └── authController.js    # Authentication controller
+│   ├── routes/
+│   │   └── authRoutes.js        # Authentication routes
+│   └── server.js                # Main Express server
+│
+├── Frontend/                    # client-side
+│   ├── index.html               # Main entry page
+│   ├── about_us.html            # About us page
+│   ├── courses.html             # Courses page
+│   ├── dashboard.html           # Dashboard page
+│   ├── exchange.html            # Exchange page
+│   ├── login.html               # Login page
+│   ├── register.html            # Register page
+│   └── wallet.html              # Wallet page
+│
+│   ├── css/                     # CSS styles
+│   │   ├── styles.css
+│   │   └── styles-courses.css
+│
+│   ├── js/                      # Frontend scripts
+│   │   ├── about_us.js
+│   │   ├── courses.js
+│   │   ├── dashboard.js
+│   │   ├── exchange.js
+│   │   ├── index.js
+│   │   ├── login.js
+│   │   ├── register.js
+│   │   └── wallet.js
+│
+│   └── pdfs/                    # PDF resources
+│       ├── Manual_de_trading_avanzado.pdf
+│       └── bitcoin.pdf
+│
+├── README.md                    # Project documentation
+├── package-lock.json            # Dependency lock file
+├── package.json                 # Node.js dependencies
 ```
 
-##📦 Instalación y Uso
-🔹 Prerrequisitos
+##📦 Installation and Use
+🔹 Prerequisites
 
 Node.js
  v16+
@@ -58,56 +91,56 @@ Node.js
 MySQL
  8+
 
-Navegador moderno (Chrome, Edge, Firefox)
+Modern browser (Chrome, Edge, Firefox)
 
-🔹 Pasos
+🔹 Steps
 
-Clonar repositorio:
+Clone repository:
 
 git clone https://github.com/tuusuario/CryptoRiwi.git
-cd CryptoRiwi
+Cryptoriwi CD
 
 
-Instalar dependencias:
+Install dependencies:
 
 npm install
 
 
-Configurar base de datos MySQL:
+Configure MySQL database:
 
-Crear la base de datos ejecutando sql/schema.sql.
+Create the database by running sql/schema.sql.
 
-Ajustar credenciales en server.js.
+Set credentials in server.js.
 
-Ejecutar servidor:
+Run server:
 
 nodemon server.js
 
 
-Abrir en navegador:
+Open in browser:
 
 http://localhost:3000
 
-📖 Documentación Técnica
+📖 Technical Documentation
 
-📌 Objetivo general: Desarrollar una aplicación web educativa que permita a los usuarios simular el uso de criptomonedas.
+📌 General objective: Develop an educational web application that allows users to simulate the use of cryptocurrencies.
 
-📌 Alcance: Registro, autenticación, billetera virtual, transacciones ficticias y visualización de precios.
+📌 Scope: Registration, authentication, virtual wallet, fictitious transactions and price display.
 
-📌 Historias de usuario:
+📌 User stories:
 
-Como usuario, quiero registrarme para tener mi propia billetera.
+As a user, I want to register to have my own wallet.
 
-Como usuario, quiero ver el precio de BTC en tiempo real.
+As a user, I want to see the price of BTC in real time.
 
-Como usuario, quiero comprar y vender Bitcoin ficticio.
+As a user, I want to buy and sell fictitious Bitcoin.
 
-Como usuario, quiero ver mi historial de transacciones.
+As a user, I want to see my transaction history.
 
 
 ```
 
-CREATE DATABASE CryptoRiwi;
+CREATE DATABASE IF NOT EXISTS CryptoRiwi;
 USE CryptoRiwi;
 
 CREATE TABLE users (
@@ -126,121 +159,26 @@ CREATE TABLE wallet (
     FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE
 );
 
-CREATE TABLE transactions (
-    transaction_id INT AUTO_INCREMENT PRIMARY KEY,
-    wallet_id INT NOT NULL,
-    type ENUM('deposit', 'withdrawal', 'purchase', 'reward', 'transfer', 'exchange') NOT NULL,
-    amount DECIMAL(18, 8) NOT NULL,
-    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (wallet_id) REFERENCES wallet(wallet_id) ON DELETE CASCADE
-);
-
-CREATE TABLE products (
-    product_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    type ENUM('course', 'ebook', 'subscription', 'event', 'merchandise', 'service') NOT NULL,
-    cost DECIMAL(18, 8) NOT NULL
-);
-
-CREATE TABLE exchanges (
-    exchange_id INT AUTO_INCREMENT PRIMARY KEY,
-    wallet_id INT NOT NULL,
-    product_id INT NOT NULL,
-    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (wallet_id) REFERENCES wallet(wallet_id) ON DELETE CASCADE,
-    FOREIGN KEY (product_id) REFERENCES products(product_id) ON DELETE CASCADE
-);
-
-CREATE TABLE crypto_price(
-    cryptoPrice_id INT AUTO_INCREMENT PRIMARY KEY,
-    crypto_name VARCHAR(100) NOT NULL,
-    crypto_price DECIMAL(18, 8) NOT NULL,
-    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-INSERT INTO users (first_name, last_name, email, password, role) VALUES ('Jose', 'Monsalve', 'jose@mail.com', '1035854944x', 'admin');
-
-INSERT INTO wallet (user_id, balance) VALUES (1, 99999999.99);
-
-INSERT INTO transactions (wallet_id, type, amount) VALUES (1, 'reward', 9999999999.99);
-
-INSERT INTO products (name, type, cost) VALUES ('Python Full Course', 'course', 100000);
-
-INSERT INTO exchanges (wallet_id, product_id) VALUES (1, 1);
-
-INSERT INTO crypto_price (crypto_name, crypto_price) VALUES ('Riwicoin', 1000000000); CREATE DATABASE CryptoRiwi;
-USE CryptoRiwi;
-
-CREATE TABLE users (
-    user_id INT AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(100) NOT NULL,
-    last_name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL UNIQUE,
-    password VARCHAR(100) NOT NULL,
-    role ENUM('admin', 'user') DEFAULT 'user'
-);
-
-CREATE TABLE wallet (
-    wallet_id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
-    balance DECIMAL(18, 8) NOT NULL DEFAULT 0.00,
-    FOREIGN KEY (user_id) REFERENCES users(user_id) ON DELETE CASCADE
-);
-
-CREATE TABLE transactions (
-    transaction_id INT AUTO_INCREMENT PRIMARY KEY,
-    wallet_id INT NOT NULL,
-    type ENUM('deposit', 'withdrawal', 'purchase', 'reward', 'transfer', 'exchange') NOT NULL,
-    amount DECIMAL(18, 8) NOT NULL,
-    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (wallet_id) REFERENCES wallet(wallet_id) ON DELETE CASCADE
-);
-
-CREATE TABLE products (
-    product_id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    type ENUM('course', 'ebook', 'subscription', 'event', 'merchandise', 'service') NOT NULL,
-    cost DECIMAL(18, 8) NOT NULL
-);
-
-CREATE TABLE exchanges (
-    exchange_id INT AUTO_INCREMENT PRIMARY KEY,
-    wallet_id INT NOT NULL,
-    product_id INT NOT NULL,
-    date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (wallet_id) REFERENCES wallet(wallet_id) ON DELETE CASCADE,
-    FOREIGN KEY (product_id) REFERENCES products(product_id) ON DELETE CASCADE
-);
-
-CREATE TABLE crypto_price(
-    cryptoPrice_id INT AUTO_INCREMENT PRIMARY KEY,
-    crypto_name VARCHAR(100) NOT NULL,
-    crypto_price DECIMAL(18, 8) NOT NULL,
-    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-
-INSERT INTO users (first_name, last_name, email, password, role) VALUES ('Jose', 'Monsalve', 'jose@mail.com', '1035854944x', 'admin');
-
-INSERT INTO wallet (user_id, balance) VALUES (1, 99999999.99);
-
-INSERT INTO transactions (wallet_id, type, amount) VALUES (1, 'reward', 9999999999.99);
-
-INSERT INTO products (name, type, cost) VALUES ('Python Full Course', 'course', 100000);
-
-INSERT INTO exchanges (wallet_id, product_id) VALUES (1, 1);
-
-INSERT INTO crypto_price (crypto_name, crypto_price) VALUES ('Riwicoin', 1000000000);
+DELIMITER $$
+CREATE TRIGGER create_wallet_after_user
+AFTER INSERT ON users
+FOR EACH ROW
+BEGIN
+    INSERT INTO wallet (user_id, balance)
+    VALUES (NEW.user_id, 1000.00);
+END$$
+DELIMITER ;
 ```
 
 
-👨‍💻 Autores
+👨‍ 💻 Authors
 
-Proyecto creado por Equipo CryptoRiwi ✨
+Project created by CryptoRiwi Team ✨
 
-Santiago Ochoa Posso (DevOps - Clan Hooper)
+Santiago Ochoa Posso (DevOps - Hopper Clan)
 
-Braian Cardona Bermudez (Developer - Clan Hooper)
+Braian Cardona Bermudez (Developer - Hopper Clan)
 
-Maria Jose Agudelo Ocampo (Scrum Manager, Product Owner - Clan Linux)
+Daniel Alexander Ariza (Developer - Lovelace Clan)
 
-Jose Manuel Gustamante (Developer - Clan Hooper)
+Jose Manuel Gustamante (Developer - Hopper Clan)

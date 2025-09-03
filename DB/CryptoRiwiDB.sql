@@ -26,4 +26,5 @@ BEGIN
     INSERT INTO wallet (user_id, balance)
     VALUES (NEW.user_id, 1000.00);
 END$$
+
 DELIMITER ;
