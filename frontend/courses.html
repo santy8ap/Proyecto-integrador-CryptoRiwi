@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoRiwi - Education/Courses</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.0/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/styles-courses.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top" aria-label="Barra de navegación principal">
+        <div class="container">
+            <a class="navbar-brand" href="./dashboard.html">CryptoRiwi</a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegación">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a id="home-btn" class="nav-link">Home</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a id="exchange-btn" class="nav-link">Exchange</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="education-btn" class="nav-link">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="aboutus-btn" class="nav-link">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="wallet-btn" class="nav-link">Wallet</a>
+                    </li>
+                </ul>
+                
+                <div id="auth-buttons" class="d-flex gap-2" style="display: flex;">
+                    <button id="login-btn" class="btn btn-outline-custom">Login</button>
+                    <button id="register-btn" class="btn btn-primary-custom">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!-- Hero Section -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <h1 class="hero-title">CryptoRiwi Financial Academy</h1>
+        <p class="hero-subtitle">
+          Master the world of cryptocurrencies and digital finance with our expert-designed courses.
+          Learn at your own pace and earn RiwiCoins while becoming a financial expert.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Learning Path -->
+<section class="container mb-5">
+  <div class="content-section">
+    <h2 class="section-title">Your Recommended Learning Path</h2>
+    <p class="section-subtitle">Follow this sequence to get the most out of your financial education</p>
+
+    <div class="learning-path">
+      <!-- Step 1 -->
+      <div class="path-step">
+        <div class="step-number">1</div>
+        <div class="step-content">
+          <h6>Blockchain Fundamentals</h6>
+          <p>Learn the basics and how blockchain technology works.</p>
+        </div>
+        <div class="ms-auto">
+          <a href="./courses/blockchain.html" class="btn btn-primary btn-sm" style="border-radius: 15px;">
+            Go to course
+          </a>
+        </div>
+      </div>
+
+      <!-- Step 2 -->
+      <div class="path-step">
+        <div class="step-number">2</div>
+        <div class="step-content">
+          <h6>Introduction to Bitcoin</h6>
+          <p>bitcoin in the long term and because it is a good idea</p>
+        </div>
+        <div class="ms-auto">
+          <a href="./courses/bitcoin.html" class="btn btn-primary btn-sm" style="border-radius: 15px;">
+            Go to course
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<!-- Additional Resources -->
+<section class="container mb-5 content-section resources-section" aria-labelledby="resources-title">
+  <h2 id="resources-title" class="section-title">Additional Resources</h2>
+  <p class="section-subtitle">Descarga material en PDF para profundizar en Bitcoin, análisis y estrategias.</p>
+
+  <div class="row g-4">
+    <!-- Card 1 -->
+    <div class="col-lg-4">
+      <article class="resource-card" aria-labelledby="res1-title">
+        <div class="resource-head">
+          <div class="resource-thumb" aria-hidden="true">
+            <i class="bi bi-file-earmark-pdf-fill fs-3"></i>
+          </div>
+          <div class="resource-info">
+            <h3 id="res1-title" class="resource-title">Advanced Blockchain</h3>
+            <div class="resource-meta">
+              <span class="meta-item">PDF • 118 pages</span>
+              <span class="badge bg-warning ms-2">Advanced</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="resource-desc">Guía completa con ejemplos prácticos y explicación técnica aplicada a cadenas de bloques y modelos de consenso.</p>
+
+        <div class="resource-actions">
+          <a href="frontend/courses/pdfs/Blockchain_Avanzado.pdf" download="Blockchain_Avanzado.pdf" class="btn btn-download btn-sm" aria-label="Download Advanced Blockchain PDF">
+            <i class="bi bi-download me-2"></i>Download PDF
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="col-lg-4">
+      <article class="resource-card" aria-labelledby="res2-title">
+        <div class="resource-head">
+          <div class="resource-thumb" aria-hidden="true">
+            <i class="bi bi-file-earmark-pdf-fill fs-3"></i>
+          </div>
+          <div class="resource-info">
+            <h3 id="res2-title" class="resource-title">Trading Strategies Manual</h3>
+            <div class="resource-meta">
+              <span class="meta-item">PDF • 53 pages</span>
+              <span class="badge bg-secondary ms-2">Trading</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="resource-desc">Manual con estrategias, ejemplos y gestión de riesgo pensado para traders principiantes y avanzados.</p>
+
+        <div class="resource-actions">
+          <a href="frontend/courses/pdfs/Manual_de_trading_avanzado.pdf" download="Manual_de_trading_avanzado.pdf" class="btn btn-download btn-sm" aria-label="Download Trading Manual PDF">
+            <i class="bi bi-download me-2"></i>Download PDF
+          </a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="col-lg-4">
+      <article class="resource-card" aria-labelledby="res3-title">
+        <div class="resource-head">
+          <div class="resource-thumb" aria-hidden="true">
+            <i class="bi bi-file-earmark-pdf-fill fs-3"></i>
+          </div>
+          <div class="resource-info">
+            <h3 id="res3-title" class="resource-title">Key Concepts Summary</h3>
+            <div class="resource-meta">
+              <span class="meta-item">PDF • 12 pages</span>
+              <span class="badge bg-success ms-2">Summary</span>
+            </div>
+          </div>
+        </div>
+
+        <p class="resource-desc">Resumen visual de los conceptos clave sobre Bitcoin y por qué puede ser una inversión a largo plazo.</p>
+
+        <div class="resource-actions">
+          <a href="./courses/pdfs/bitcoin.pdf" download="bitcoin.pdf" class="btn btn-download btn-sm" aria-label="Download Bitcoin Summary PDF">
+            <i class="bi bi-download me-2"></i>Download PDF
+          </a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo" aria-label="Site Footer">
+  <div class="container">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <a href="./dashboard.html" class="footer-brand">CryptoRiwi</a>
+        <p class="text-muted-small mt-2">
+          Cryptocurrency learning platform. Earn RiwiCoins by learning and redeem them for products and services.
+        </p>
+      </div>
+
+      <div class="col-md-2">
+        <h6 class="footer-title">Contact</h6>
+        <p class="text-muted-small mb-1"><a href="mailto:support@cryptoriwi.example" rel="noopener noreferrer">support@cryptoriwi.example</a></p>
+        <p class="text-muted-small mb-0">24/7 Help Center</p>
+      </div>
+    </div>
+
+    <hr class="footer-sep">
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+      <small class="text-muted-small">© <time datetime="2025">2025</time> CryptoRiwi. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
+
+
+                <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/courses.js"></script>
+</body>
+</html>
