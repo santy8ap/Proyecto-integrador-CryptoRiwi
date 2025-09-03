@@ -47,7 +47,6 @@ CryptoRiwi/
 │   │   └── authController.js    # Authentication controller
 │   ├── routes/
 │   │   └── authRoutes.js        # Authentication routes
-│   ├── APIbtc.js                # Bitcoin API script
 │   └── server.js                # Main Express server
 │
 ├── Frontend/                    # client-side
